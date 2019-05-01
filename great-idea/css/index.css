@@ -32,7 +32,8 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style-type: square;
+	margin-top: 25px;
 }
 blockquote, q {
 	quotes: none;
@@ -67,46 +68,52 @@ h1, h2, h3, h4, h5 {
 
 .container {
 	width: 880px;
-	/* TB LR */
 	margin: 0 auto;
   }
   
-  /* header */
+header {
+	  display: flex;
+  }
   
-  header nav {
+header nav {
 	display: flex;
 	width: 691px;
 	vertical-align: top;
 	margin-top: 35px;
   }
   
-  header nav a {
+header nav a {
 	margin-right: 65px;
 	font-size: 14px;
 	color: gray;
 	text-decoration: none;
   }
   
-  header nav a:hover {
+header nav a:hover {
 	text-decoration: underline;
   }
   
-  header nav a:first-child {
+header nav a:first-child {
 	margin-left: 0;
   }
   
-  header nav a:last-child {
+header nav a:last-child {
 	margin-right: 0;
   }
   
-  header .logo {
+header .logo {
 	margin-top: 25px;
   }
   
   /* cta */
+
+  .cta {
+	  display: flex;
+	  align-content: space-around;
+	  justify-content: space-between;
+  }
   
   .cta .cta-text {
-	display: flex;
 	vertical-align: top;
 	font-size: 77px;
 	margin-top: 120px;
@@ -130,9 +137,9 @@ h1, h2, h3, h4, h5 {
   }
   
   .cta img {
-	display: flex;
 	margin-top: 69px;
   }
+
   
   .main-content {
 	border-top: 1px solid black;
@@ -141,12 +148,13 @@ h1, h2, h3, h4, h5 {
   }
   
   .main-content .top-content {
-	padding: 0 10px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
   }
   
   .main-content .top-content .text-content {
 	width: 410px;
-	display: flex;
 	margin-right: 34px;
   }
   
@@ -158,14 +166,15 @@ h1, h2, h3, h4, h5 {
 	margin-top: 45px;
   }
   
-  .main-content .bottom-content {
+  .main-content .bottom-content{
+	display: flex;
+	justify-content: space-between;
 	margin-top: 37px;
-	padding: 0 10px;
+	padding: 0;
   }
   
   .main-content .bottom-content .text-content {
 	width: 275px;
-	display: flex;
 	margin-right: 12px;
   }
   
@@ -176,7 +185,7 @@ h1, h2, h3, h4, h5 {
   .contact {
 	margin-top: 57px;
 	border-top: 1px solid black;
-	padding: 39px 10px 0;
+	padding: 39px 0;
   }
   
   .contact p {
@@ -187,4 +196,58 @@ h1, h2, h3, h4, h5 {
 	margin: 32px 0;
 	text-align: center;
 	font-size: 14px;
+  }
+
+  .services-header-img {
+	  margin-top: 40px;
+	  margin-bottom: 35px;
+  }
+
+  .services-head {
+	  padding-bottom: 35px;
+	  border-bottom: 1px solid black;
+  }
+
+  .services-head h2 {
+	  font-size:30px;
+  }
+
+  .container-main {
+	  margin-top:35px;
+	  display: flex;
+	  flex-wrap: wrap;
+	  justify-content: space-between;
+  }
+
+  .main {
+	  margin-bottom: 35px;
+	  padding: 30px;
+	  border: 1px solid black;
+	  width: 420px;
+	  background: rgb(235, 236, 236);
+
+  }
+
+  .main button {
+	  padding: 6px 15px;
+	  border-radius: 6px;
+	  background: white;
+	  margin-top:15px;
+  }
+
+  .container-facts {
+	  display: flex;
+	  justify-content: space-between;
+	  padding-top: 35px;
+	  padding-bottom:50px;
+	  border-top: 3px solid black;
+  }
+
+  .facts-content {
+	  margin-right: 45px;
+  }
+
+  li {
+	  margin: 15px;
+	  padding-left:3px;
   }
